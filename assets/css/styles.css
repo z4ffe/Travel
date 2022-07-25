@@ -250,7 +250,7 @@ body {
   width: 228px;
   height: 59px;
   background-color: #0D606F;
-  background-image: url("/assets/img/svg/arrow-btn.svg");
+  background-image: url("../img/svg/arrow-btn.svg");
   background-repeat: no-repeat;
   background-size: 35px, contain;
   background-position: 34px;
@@ -341,7 +341,7 @@ body {
   width: 228px;
   height: 59px;
   background-color: #0D606F;
-  background-image: url("/assets/img/svg/arrow-btn.svg");
+  background-image: url("../img/svg/arrow-btn.svg");
   background-repeat: no-repeat;
   background-size: 35px, contain;
   background-position: 34px;
@@ -362,7 +362,7 @@ body {
 .footer {
   display: flex;
   height: 61px;
-  background-image: url("/assets/img/footer-background.png");
+  background-image: url("../img/footer-background.png");
   background-position: 0 99%;
 }
 .footer p {
@@ -392,7 +392,7 @@ body {
 .footer .footer-social__list li .insta {
   display: block;
   content: "";
-  background-image: url("/assets/img/svg/insta.svg");
+  background-image: url("../img/svg/insta.svg");
   width: 34px;
   height: 34px;
   background-size: contain;
@@ -400,7 +400,7 @@ body {
 .footer .footer-social__list li .youtube {
   display: block;
   content: "";
-  background-image: url("/assets/img/svg/youtube.svg");
+  background-image: url("../img/svg/youtube.svg");
   width: 34px;
   height: 34px;
   background-size: contain;
@@ -408,7 +408,7 @@ body {
 .footer .footer-social__list li .twitter {
   display: block;
   content: "";
-  background-image: url("/assets/img/svg/twitter.png");
+  background-image: url("../img/svg/twitter.png");
   width: 34px;
   height: 34px;
   background-size: contain;
@@ -452,7 +452,7 @@ body {
   width: 560px;
   height: 56px;
   border: none;
-  background-image: url("/assets/img/svg/fb.svg");
+  background-image: url("../img/svg/fb.svg");
   background-repeat: no-repeat;
   background-position: 145px, center;
   background-color: #1877F2;
@@ -472,7 +472,7 @@ body {
   width: 560px;
   height: 56px;
   border: none;
-  background-image: url("/assets/img/svg/google.svg");
+  background-image: url("../img/svg/google.svg");
   background-repeat: no-repeat;
   background-position: 145px, center;
   background-color: #fff;
