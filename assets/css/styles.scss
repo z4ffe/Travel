@@ -1,0 +1,667 @@
+$maingreen: #0D606F;
+$mainorange: #F2785C;
+
+// ------------------------------------------------------ //
+
+.btn--hover:hover {
+  transition: 0.2s;
+  transform: scale(103%);
+}
+
+.btn--click:active {
+  transition: 0.2s;
+  transform: scale(97%);
+}
+
+// ------------------------------------------------------ //
+
+* {
+  font-family: 'Aleo', serif;
+  scroll-behavior: smooth;
+}
+
+
+// ------------------------------------------------------ //
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+// ------------------------------------------------------ //
+
+
+
+// ------------------------------------------------------ //
+
+
+.header {
+  width: 100%;
+  height: 765px;
+  background-image: url("/assets/img/header-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    padding: 0 120px 0 120px;
+    height: 90px;
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
+
+    &__menu {
+      display: flex;
+      list-style: none;
+      margin-left: 120px;
+
+      li {
+        &:not(:first-child) {
+          padding-left: 35px;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: 'Red Hat Text', sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+
+    }
+
+    &__loginbtn {
+      margin-left: 215px;
+      width: 103px;
+      height: 41px;
+      border-radius: 10px;
+      border: none;
+      background-color: $maingreen;
+      color: white;
+      font-family: 'Red Hat Text', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 2px 3px rgba(13, 96, 111, 0.16);
+      transition: 0.2s;
+    }
+  }
+
+  .preview {
+    display: flex;
+    flex-direction: column;
+    width: 892px;
+    height: 422px;
+    margin: 0 0 0 120px;
+
+    &__heading {
+      margin: 32px 0 30px 0;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 96px;
+      color: #FFFFFF;
+    }
+
+    &__description {
+      font-style: italic;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+
+    &-form {
+      display: flex;
+      margin-top: 48px;
+      width: 892px;
+      min-height: 95px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 16px;
+      position: relative;
+
+      .preview-form__input {
+        font-size: 24px;
+        margin-left: 43px;
+        background: transparent;
+        border: none;
+        width: 560px;
+        height: 30px;
+        align-self: center;
+        margin-top: 5px;
+        color: $mainorange;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 29px;
+        transition: 0.5s;
+
+        &::placeholder {
+          color: $mainorange;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 29px;
+          transition: 0.5s;
+        }
+
+        &:focus {
+          outline: none;
+          border: 1px solid $mainorange;
+          border-radius: 5px;
+        }
+      }
+
+      .preview-form__btn {
+        margin-left: 40px;
+        align-self: center;
+        width: 228px;
+        height: 59px;
+        background: $maingreen;
+        box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        border: none;
+        font-family: 'Red Hat Text', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+      font-family: 'Red Hat Text', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 53px;
+      color: $mainorange;
+      margin: 80px auto 45px;
+    }
+
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 131px 0 131px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          align-self: center;
+          width: 100px;
+          height: 100px;
+        }
+
+        span {
+          margin-top: 25px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: $maingreen;
+        }
+      }
+    }
+  }
+
+  .destinations {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+
+    h2 {
+      margin: 0 auto;
+      font-family: 'Red Hat Text', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 53px;
+      color: $mainorange;
+    }
+
+    &__preview {
+      display: grid;
+      margin-top: 40px;
+      grid-template-columns: 260px 1fr 260px;
+      gap: 60px;
+      overflow: hidden;
+      width: 100%;
+
+      .card1 {
+        transition: 0.5s;
+        transform: translate(-215%);
+
+        .img-dest1 {
+          transition: 0.5s;
+        }
+      }
+
+      .card2 {
+        transition: 0.5s;
+
+        .img-dest2 {
+          transition: 0.5s;
+
+        }
+      }
+
+      .card3 {
+        transition: 0.5s;
+
+
+        .img-dest3 {
+          transition: 0.5s;
+        }
+      }
+    }
+
+    &__nav {
+      margin: 25px auto 0;
+
+      button {
+        border: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(242, 120, 92, 0.5);
+        border-radius: 50%;
+        transition: 0.2s;
+
+        &:not(:first-child) {
+          margin-left: 5px;
+        }
+
+        &:hover {
+          transition: 0.2s;
+          transform: scale(110%);
+        }
+
+        &:active {
+          transition: 0.2s;
+          transform: scale(95%);
+        }
+      }
+    }
+
+    &__button {
+      margin: 40px auto 0;
+      width: 228px;
+      height: 59px;
+      background-color: $maingreen;
+      background-image: url("/assets/img/svg/arrow-btn.svg");
+      background-repeat: no-repeat;
+      background-size: 35px, contain;
+      background-position: 34px;
+      padding-left: 55px;
+      box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+      border-radius: 10px;
+      border: none;
+      color: #FFFFFF;
+      font-family: 'Red Hat Text', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .stories {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    position: relative;
+
+    h2 {
+      margin: 0 auto;
+      font-family: 'Red Hat Text', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 53px;
+      color: $mainorange;
+    }
+
+    .stories-wrapper {
+      margin-top: 50px;
+      height: 1270px;
+      background-image: url("/assets/img/footer-background.png");
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.7);;
+        height: 1270px;
+
+        .stories-main {
+          margin: 30px auto 0;
+          height: 1100px;
+          width: 1200px;
+
+          .stories-card {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            height: 250px;
+            gap: 40px;
+            margin-bottom: 40px;
+
+            .card-image {
+
+              img {
+                width: 400px;
+                height: 250px;
+                filter: drop-shadow(0px 4px 4px #0D606F);
+                border-radius: 16px;
+              }
+            }
+
+            .card-description {
+              h3 {
+                margin: 0;
+                font-family: 'Aleo', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 42px;
+                color: #0D606F;
+              }
+
+              span {
+                display: block;
+                margin-top: 25px;
+                font-family: 'Aleo', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #0D606F;
+
+                a {
+                  display: block;
+                  font-family: 'Aleo', sans-serif;
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 20px;
+                  line-height: 24px;
+                  color: #0D606F;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      width: 228px;
+      height: 59px;
+      background-color: $maingreen;
+      background-image: url("/assets/img/svg/arrow-btn.svg");
+      background-repeat: no-repeat;
+      background-size: 35px, contain;
+      background-position: 34px;
+      padding-left: 55px;
+      box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+      border-radius: 10px;
+      border: none;
+      color: #FFFFFF;
+      font-family: 'Red Hat Text', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 40px;
+      align-self: center;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  height: 61px;
+  background-image: url("/assets/img/footer-background.png");
+  background-position: 0 99%;
+
+  p {
+    width: 1000px;
+    padding-left: 580px;
+    align-self: center;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+
+  .footer-social {
+    display: flex;
+    width: 141px;
+    height: 34px;
+    padding-right: 180px;
+
+    &__list {
+      display: flex;
+      list-style: none;
+
+      li {
+        padding-left: 20px;
+
+        .insta {
+          display: block;
+          content: '';
+          background-image: url("/assets/img/svg/insta.svg");
+          width: 34px;
+          height: 34px;
+          background-size: contain;
+        }
+
+        .youtube {
+          display: block;
+          content: '';
+          background-image: url("/assets/img/svg/youtube.svg");
+          width: 34px;
+          height: 34px;
+          background-size: contain;
+        }
+
+        .twitter {
+          display: block;
+          content: '';
+          background-image: url("/assets/img/svg/twitter.png");
+          width: 34px;
+          height: 34px;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+.popup {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    width: 650px;
+    min-height: 436px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    transform: translate(0, -1000px);
+    transition: 0.5s;
+
+    h2 {
+      margin: 30px auto 10px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: $maingreen;
+    }
+
+    .facebook-btn {
+      display: none;
+      margin-top: 15px;
+      align-self: center;
+      width: 560px;
+      height: 56px;
+      border: none;
+      background-image: url("/assets/img/svg/fb.svg");
+      background-repeat: no-repeat;
+      background-position: 145px, center;
+      background-color: #1877F2;
+      box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+      border-radius: 10px;
+      font-family: 'Red Hat Text', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: #FFFFFF;
+    }
+
+    .google-btn {
+      display: none;
+      margin: 20px 0 20px 0;
+      align-self: center;
+      width: 560px;
+      height: 56px;
+      border: none;
+      background-image: url("/assets/img/svg/google.svg");
+      background-repeat: no-repeat;
+      background-position: 145px, center;
+      background-color: #fff;
+      box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+      border-radius: 10px;
+      font-family: 'Red Hat Text', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: $maingreen;
+    }
+
+    .popup__underline {
+      display: none;
+      margin: 0 auto;
+    }
+
+    .popup-form__register {
+      margin: 0 auto;
+      width: 90%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+
+      label {
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $maingreen;
+      }
+
+      input {
+        margin-top: 5px;
+        padding-left: 20px;
+        width: 550px;
+        height: 54px;
+        background: #FFFFFF;
+        box-shadow: inset 0 0 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        font-size: 20px;
+      }
+
+      .reg-btn {
+        margin-top: 25px;
+        width: 575px;
+        height: 54px;
+        background: $maingreen;
+        border: none;
+        box-shadow: 0 0 3px rgba(13, 96, 111, 0.08), 0 2px 3px rgba(13, 96, 111, 0.16);
+        border-radius: 10px;
+        color: #fff;
+        font-family: 'Red Hat Text', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+
+    span {
+      margin: 20px auto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      color: rgba(13, 96, 111, 0.5);
+
+      .login-btn {
+        display: inline-block;
+        color: $maingreen;
+        text-decoration: underline;
+      }
+
+      .login-btn:hover {
+        transform: scale(102%);
+        transition: 0.3s;
+      }
+
+      .login-btn:active {
+        transform: scale(98%);
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.popup--visible {
+  visibility: visible;
+  transform: translate(0, 0);
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 390px) {
+  body {
+    max-width: 390px;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    max-width: 390px;
+  }
+}
+
+
+
