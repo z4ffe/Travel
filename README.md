@@ -1,1 +1,1 @@
-<a href="https://z4ffe.github.io/Travel/" style="text-align: center; display: block">GH-Pages Travel</a>
+<a href="https://z4ffe.github.io/Travel/" style="text-align: center; display: block">GH-Pages Travel RS School</a>
