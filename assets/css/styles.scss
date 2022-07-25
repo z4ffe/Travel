@@ -465,10 +465,12 @@ body {
 
         .insta {
           display: block;
+          margin-top: 1px;
           content: '';
           background-image: url("../img/svg/insta.svg");
-          width: 34px;
-          height: 34px;
+          width: 30px;
+          height: 30px;
+          background-repeat: no-repeat;
           background-size: contain;
         }
 
